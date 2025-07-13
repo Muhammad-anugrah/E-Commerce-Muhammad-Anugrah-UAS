@@ -1,3 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PARFS - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="header-center"><h3>NuGgStoree</h3></div>
+    <div class="header-right">
+        <a href="keranjang.html"><span>🛒</span></a>
+      <span>👤</span>
+    </div>
+  </header>  
+  
+  <!-- Side Navigation (ditambahkan setelah header) -->
+  <nav id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+        <h1>Selamat Datang</h1>  
+        <p>Temukan aroma favorit Anda dengan koleksi parfum eksklusif dari seluruh dunia! Kami menawarkan berbagai macam parfum untuk pria dan wanita, dari klasik hingga modern, dengan harga yang kompetitif dan kualitas yang terjamin.</p>  
+    </div>
+    <div class="hero-img">
+      <img src="images/produk4.jpg" alt="Parfum Hero">
+    </div>
+  </section>
 <!-- Keranjang -->
 <section class="cart-section">
   <h2>Keranjang Belanja Anda</h2>
@@ -10,3 +51,41 @@
     <p><strong>Total:</strong> $0.00</p>
   </div>
 </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <p>Friends let friends know about best products and content.</p>
+        <form>
+          <input type="email" placeholder="Enter email address..">
+          <button type="submit">✈️</button>
+        </form>
+      </div>
+      <div class="footer-links-centered">
+        <ul class="footer-column">
+          <li><a href="#" class="highlight-link">Hubungi Kami</a></li>
+        </ul>
+      
+        <div class="footer-columns">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Download App</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>      
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('side-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html>
